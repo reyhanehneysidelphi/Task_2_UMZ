@@ -69,6 +69,8 @@ end = int(input("The second number: "))
 
 def calculate_magic_numbers(start, end):
 
+    '''Creates random numbers between two inputted numbers.'''
+
     numbers = []
     while True:
         num = float(input("Enter a number between 0 and 1: "))
@@ -88,6 +90,9 @@ import time
 
 
 def exam_numbers():
+
+    '''It's a game of putting the decimal equivalent of a binary number.'''
+
     answers = []
 
     start = time.perf_counter()
@@ -129,6 +134,9 @@ import string
 
 
 def check_pass():
+    
+    '''Gets username and password, creates a tuple list for all the usernames and passwords and return a list of all the usernames with a strong password.'''
+
     usernames = []
     has_upper = False
     has_lower = False
