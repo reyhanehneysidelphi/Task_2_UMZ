@@ -3,6 +3,8 @@ import time
 
 
 def exam_numbers():
+
+    '''It's a game of putting the decimal equivalent of a binary number.'''
     answers = []
 
     start = time.perf_counter()
