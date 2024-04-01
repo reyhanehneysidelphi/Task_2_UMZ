@@ -3,6 +3,8 @@ end = int(input("The second number: "))
 
 def calculate_magic_numbers(start, end):
 
+    '''Creates random numbers between two inputted numbers.'''
+
     numbers = []
     while True:
         num = float(input("Enter a number between 0 and 1: "))
