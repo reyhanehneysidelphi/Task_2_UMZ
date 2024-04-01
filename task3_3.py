@@ -2,6 +2,8 @@ import string
 
 
 def check_pass():
+
+    '''Gets username and password, creates a tuple list for all the usernames and passwords and return a list of all the usernames with a strong password.'''
     usernames = []
     has_upper = False
     has_lower = False
