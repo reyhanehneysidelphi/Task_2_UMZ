@@ -77,7 +77,7 @@ def calculate_magic_numbers(start, end):
         num2 = num*(end-start)+start
         numbers.append(num2)
         respond = input("Do you want to continue?")
-        if respond == "No" or respond == "no":
+        if respond == "No" or respond == "no" or respond == "NO":
             break
 
     return(numbers)
@@ -181,12 +181,12 @@ def unlock_vault(clue):
     return(FirstChar)
 
 firstone = unlock_vault(TheList)
-print(firstone)
+print(firstone, end="")
 secondone = unlock_vault(fanswer)
-print(secondone)
+print(secondone, end="")
 thirdone = unlock_vault(fgame)
-print(thirdone)
+print(thirdone, end="")
 forthone = unlock_vault(num_game)
-print(forthone)
+print(forthone, end="")
 fifthone = unlock_vault(users)
 print(fifthone)
