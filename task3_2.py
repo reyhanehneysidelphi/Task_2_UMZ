@@ -6,6 +6,9 @@ def exam_numbers():
 
     '''It's a game of putting the decimal equivalent of a binary number.'''
     answers = []
+    
+    correct_count = 0
+    incorrect_count = 0
 
     start = time.perf_counter()
     print("You have 20 seconds to answer.")
@@ -35,11 +38,16 @@ def exam_numbers():
         answer = int(input("Enter your answer:"))
         if answer == d_number:
             answers.append("correct")
+            correct_count = correct_count + 1
         else:
             answers.append("incorrect")
-
+            incorrect_count = incorrect_count + 1
+            
     print(answers)
+    return(correct_count, incorrect_count)
 
 
 print("Lets play")
 game = exam_numbers()
+print("The amount of correct answers, The amount of incorrect answers:")
+print(game)
