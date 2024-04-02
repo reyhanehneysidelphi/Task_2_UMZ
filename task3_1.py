@@ -11,7 +11,7 @@ def calculate_magic_numbers(start, end):
         num2 = num*(end-start)+start
         numbers.append(num2)
         respond = input("Do you want to continue?")
-        if respond == "No" or respond == "no":
+        if respond == "No" or respond == "no" or respond == "NO":
             break
 
     print(numbers)
